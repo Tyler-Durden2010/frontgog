@@ -1,0 +1,278 @@
+.section {
+  background-color: #961914;
+}
+
+.section__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 160px;
+}
+
+@media (max-width: 1140px) {
+  .section__container {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 10px;
+  }
+}
+
+.section__contacts {
+  padding: 60px 0;
+}
+
+@media (max-width: 1140px) {
+  .section__contacts {
+    padding: 40px 0 10px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .section__contacts {
+    padding: 30px 0 10px;
+  }
+}
+
+.section__forms {
+  padding: 80px 0;
+}
+
+@media (max-width: 1140px) {
+  .section__forms {
+    padding: 20px 0;
+  }
+}
+
+.section__questions {
+  margin-bottom: 35px;
+}
+
+.section__title-form {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 140%;
+  color: #ffffff;
+}
+
+.section__subtitle-form {
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: #ffffff;
+}
+
+.section__form {
+  max-width: 640px;
+}
+
+.section__input-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 24px;
+}
+
+@media (max-width: 767.98px) {
+  .section__input-block {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 5px;
+    margin-bottom: 10px;
+  }
+}
+
+.section__input {
+  width: 100%;
+  padding: 22px 15px 6px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 8px;
+  margin-bottom: 16px;
+  font-size: 20px;
+  color: #ffffff;
+}
+
+.section__textarea {
+  width: 100%;
+  padding: 8px 15px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 8px;
+  margin-bottom: 30px;
+  color: #ffffff;
+  font-size: 24px;
+}
+
+.section__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 10px;
+}
+
+@media (max-width: 767.98px) {
+  .section__items {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+.section__block-data {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.section__text-checkbox {
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 140%;
+  color: #ffffff;
+  max-width: 230px;
+}
+
+@media (max-width: 767.98px) {
+  .section__text-checkbox {
+    max-width: 100%;
+  }
+}
+
+.section__button {
+  background: #fff4f3;
+  color: #ec7973;
+  text-align: center;
+}
+
+.section__button:hover {
+  background-color: #ead1d0;
+  color: #961914;
+}
+
+@media (max-width: 767.98px) {
+  .section__button {
+    width: 100%;
+  }
+}
+
+.contact {
+  font-family: "Montserrat";
+  font-style: normal;
+  color: #ffffff;
+}
+
+@media (max-width: 1140px) {
+  .contact {
+    width: 100%;
+  }
+}
+
+.contact__title {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 46px;
+  line-height: 130%;
+  letter-spacing: 0.02em;
+}
+
+.contact__text {
+  font-size: 16px;
+  line-height: 140%;
+  font-weight: 400;
+  margin-bottom: 32px;
+}
+
+.contact__inst {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.contact__number {
+  display: block;
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 140%;
+  margin-bottom: 24px;
+  color: #ffffff;
+  margin-bottom: 24px;
+}
+
+.contact__social {
+  margin-bottom: 40px;
+}
+
+.contact__whtsp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  max-width: 260px;
+  background-color: rgba(255, 255, 255, 0.3);
+  color: white;
+  border-radius: 8px;
+  padding: 10px 16px 10px 44px;
+  cursor: pointer;
+  margin-bottom: 16px;
+}
+
+.contact__whtsp:hover {
+  background-color: #ec7973;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.contact__whtsp::before {
+  content: url("../img/social/whatsapp.svg");
+  top: 5px;
+  left: 10px;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+}
+
+.contact__tlgr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  max-width: 260px;
+  background-color: rgba(255, 255, 255, 0.3);
+  color: white;
+  border-radius: 8px;
+  padding: 10px 16px 10px 44px;
+  cursor: pointer;
+}
+
+.contact__tlgr:hover {
+  background-color: #ec7973;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.contact__tlgr::before {
+  content: url("../img/social/telegram.svg");
+  top: 5px;
+  left: 10px;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+}
+
+#checkbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: start;
+      align-self: start;
+}

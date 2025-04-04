@@ -1,0 +1,264 @@
+.main {
+  // .main__container
+  padding: 80px 0;
+
+  // .main__content
+  &__content {
+    display: flex;
+    margin-bottom: 80px;
+    @media (max-width: 991.98px) {
+      flex-wrap: wrap;
+      margin-bottom: 40px;
+    }
+    @media (max-width: 767.98px) {
+      margin-bottom: 0;
+    }
+  }
+  // .main__content-left
+  &__content-left {
+    padding-right: 20px;
+    @media (max-width: 991.98px) {
+      margin-bottom: 30px;
+    }
+  }
+
+  // .main__title
+  &__title {
+    font-family: "Roboto";
+    font-weight: 700;
+    font-size: 46px;
+    line-height: 130%;
+    letter-spacing: 0.02em;
+    color: #000000;
+    margin-bottom: 32px;
+  }
+
+  // .main__text
+  &__text {
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    color: #434242;
+    margin-bottom: 24px;
+  }
+
+  // .main__subtitle
+  &__subtitle {
+    font-family: "Montserrat";
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 130%;
+    color: #000000;
+    margin-bottom: 16px;
+  }
+
+  // .main__list
+  &__list {
+    padding: 0 0 0 10px;
+  }
+
+  // .main__link
+  &__link {
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    color: #434242;
+    position: relative;
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      top: 8px;
+      left: -10px;
+      width: 6px;
+      height: 6px;
+      background-color: #961914;
+      border-radius: 50%;
+    }
+  }
+
+  // .main__content-right
+  &__content-right {
+    max-width: 585px;
+    @media (max-width: 1140px) {
+      width: 100%;
+    }
+    @media (max-width: 991.98px) {
+      max-width: 100%;
+    }
+  }
+
+  // .main__image
+  &__image {
+    display: block;
+    @media (max-width: 991.98px) {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+  }
+
+  //------блок с наименованием позоций еды для собак----
+  .food {
+    // .food__adults
+    background-color: #ead1d0;
+    padding: 32px 80px;
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+
+    @media (max-width: 991.98px) {
+      flex-wrap: wrap;
+    }
+
+    @media (max-width: 767.98px) {
+      padding: 22px 30px;
+    }
+
+    &__titles {
+      display: flex;
+    }
+
+    &__title-adults,
+    &__title-pupies {
+      font-family: "Montserrat";
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 200%;
+      text-transform: uppercase;
+      color: #000000;
+      text-align: center;
+    }
+
+    &__adults,
+    &__puppies {
+      display: flex;
+      gap: 75px;
+      @media (max-width: 1140px) {
+        flex-wrap: wrap;
+        row-gap: 0;
+        padding-left: 60px;
+      }
+      @media (max-width: 767.98px) {
+        padding-left: 30px;
+      }
+    }
+
+    // .food__title
+    &__title {
+      font-family: "Montserrat";
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 200%;
+      text-transform: uppercase;
+      color: #000000;
+    }
+
+    // .food__items
+    &__items-left {
+      display: flex;
+      flex-direction: column;
+      @media (max-width: 1140px) {
+        display: block;
+      }
+    }
+    // .food__item
+    &__item {
+      font-family: "Montserrat";
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 250%;
+      color: #434242;
+      padding-left: 14px;
+    }
+
+    //----icons наименование позоций еды для собак------
+    .item-1 {
+      position: relative;
+      &::before {
+        position: absolute;
+        content: url("../img/meal/steak.svg");
+        width: 20px;
+        height: 14px;
+        top: 2px;
+        left: -12px;
+      }
+    }
+
+    .item-2 {
+      position: relative;
+      &::before {
+        position: absolute;
+        content: url("../img/meal/bone.svg");
+        width: 20px;
+        height: 14px;
+        top: 2px;
+        left: -12px;
+      }
+    }
+
+    .item-3 {
+      position: relative;
+      &::before {
+        position: absolute;
+        content: url("../img/meal/vegetables.svg");
+        width: 20px;
+        height: 14px;
+        top: 2px;
+        left: -12px;
+      }
+    }
+
+    .item-4 {
+      position: relative;
+      &::before {
+        position: absolute;
+        content: url("../img/meal/liver.svg");
+        width: 20px;
+        height: 14px;
+        top: 2px;
+        left: -12px;
+      }
+    }
+
+    .item-5 {
+      position: relative;
+      &::before {
+        position: absolute;
+        content: url("../img/meal/offal.svg");
+        width: 20px;
+        height: 14px;
+        top: 2px;
+        left: -12px;
+      }
+    }
+
+    .item-6 {
+      position: relative;
+      &::before {
+        position: absolute;
+        content: url("../img/meal/nuts.svg");
+        width: 20px;
+        height: 14px;
+        top: 2px;
+        left: -12px;
+      }
+    }
+
+    .item-7 {
+      position: relative;
+      &::before {
+        position: absolute;
+        content: url("../img/meal/fruit.svg");
+        width: 20px;
+        height: 14px;
+        top: 2px;
+        left: -14px;
+      }
+    }
+  }
+}
